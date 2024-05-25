@@ -64,7 +64,7 @@ body {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1325px;
     width: 100%;
     margin: o auto;
 
@@ -247,7 +247,7 @@ body {
             font-size: 14px;
             font-weight: 500;
             color: var(--color1);
-            
+
             span.space-bar {
                 width: 2.1875rem;
                 height: 1px;
@@ -260,6 +260,145 @@ body {
             a {
                 text-decoration: underline;
                 color: inherit;
+            }
+        }
+    }
+}
+
+// Footer section
+.footer {
+    padding-top: 100px;
+
+    .footer-top {
+        padding: 70px 0;
+        border-top: 3px solid var(--color12);
+        border-bottom: 3px solid var(--color12);
+
+
+        .footer-social-links {
+            margin-top: 1.875rem;
+
+            span.social-media {
+
+                i {
+                    font-size: 15px;
+                    color: #292930;
+                    margin-right: 15px;
+
+                    &:hover {
+                        color: #e76458;
+                    }
+                }
+            }
+        }
+
+        h5 {
+            color: var(--color11);
+            font-size: 1.135rem;
+            font-weight: 500;
+            margin-bottom: 1.25rem;
+        }
+
+        ul {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 0;
+
+            li {
+                a {
+                    font-size: 1.125rem;
+                    color: var(--color3);
+                    font-family: var(--DM-Sans);
+                    font-weight: 500;
+                    position: relative;
+                    transition: all linear 0.2s;
+                    -webkit-transition: all linear 0.2s;
+                    -moz-transition: all linear 0.2s;
+                    -ms-transition: all linear 0.2s;
+                    -o-transition: all linear 0.2s;
+
+                    &:hover {
+                        color: #e4405f;
+                    }
+                }
+
+
+            }
+
+            li+li {
+                margin-top: 1.25rem;
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding: 20px 0;
+
+        .footer-bottom-links {
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                li {
+                    position: relative;
+                    font-family: var(--DM-Sans);
+                    font-size: 14px;
+                    color: var(--color3);
+                    font-weight: 500;
+
+                    a {
+                        font-family: var(--DM-Sans);
+                        font-size: 14px;
+                        color: var(--color3);
+                        font-weight: 500;
+                        transition: var(--transition3);
+                        -webkit-transition: var(--transition3);
+                        -moz-transition: var(--transition3);
+                        -ms-transition: var(--transition3);
+                        -o-transition: var(--transition3);
+
+                        &:hover {
+                            color: var(--color4);
+                        }
+                    }
+                }
+
+                li+li {
+                    padding-left: 15px;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background-color: var(--color3);
+                        height: 5px;
+                        width: 5px;
+                        -webkit-border-radius: 50%;
+                        border-radius: 50%;
+                        top: 50%;
+                        margin-top: -2.5px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+        .footer-bottom-payment {
+            display: flex;
+            align-items: center;
+            gap: 21px;
+            justify-content: end;
+
+            span {
+                position: relative;
+                font-family: var(--DM-Sans);
+                font-size: 14px;
+                color: var(--color3);
+                font-weight: 500;
+            }
+
+            img {
+                max-height: 1.75rem;
             }
         }
     }
