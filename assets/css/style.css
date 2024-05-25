@@ -218,8 +218,8 @@ body {
 }
 .footer .footer-top {
   padding: 70px 0;
-  border-top: 3px solid var(--color12);
-  border-bottom: 3px solid var(--color12);
+  border-top: 3px solid rgba(203, 211, 217, 0.3568627451);
+  border-bottom: 3px solid rgba(203, 211, 217, 0.3568627451);
 }
 .footer .footer-top .footer-social-links {
   margin-top: 1.875rem;
