@@ -4,3 +4,84 @@
     outline: none;
     box-sizing: border-box;
 }
+
+// Common CSS
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: o auto;
+
+    ul {
+        li {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+// Header section
+.header {
+    .header-topbar {
+        background-color: #f6f7fb;
+        padding: 15px 0;
+
+        span>a {
+            color: #292930;
+            transition: all linear 0.2s;
+            -webkit-transition: all linear 0.2s;
+            -moz-transition: all linear 0.2s;
+            -ms-transition: all linear 0.2s;
+            -o-transition: all linear 0.2s;
+            padding: 0 15px;
+
+            &:hover {
+                color: #e76458;
+            }
+        }
+
+        span.text-link { 
+            font-size: 13px;
+        }
+
+        .header-topbar-left {
+            span {
+                a {
+                    &:first-child {
+                        padding-left: 0 ;
+                    }
+                }
+
+                &:last-child {
+                    border-left: 1px solid #292930;
+                    padding-left: 15px;
+                }
+            }
+
+            span.social-media {
+                i {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .header-topbar-right {
+            text-align: right;
+
+            span {
+
+                a {
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}
