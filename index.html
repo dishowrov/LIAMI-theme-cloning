@@ -107,7 +107,7 @@
                 <div class="row">
 
                     <!-- Navigation menues -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-5">
                         <div class="header-navbar-menues">
                             <ul>
                                 <li>
@@ -145,30 +145,34 @@
                     </div>
 
                     <!-- Site logo -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-2">
                         <div class="header-logo">
-                            <img src="./assets/images/logo.svg" alt="Liami">
+                            <a href="#">
+                                <img src="./assets/images/logo.svg" alt="Liami">
+                            </a>
                         </div>
                     </div>
 
                     <!-- Search box, wishlist and cart -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-5">
                         <div class="header-navbar-right">
                             <form action="" class="header-search">
                                 <button>
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </button>
+
+                                <input type="search" placeholder="Search">
                             </form>
 
-                            <ul>
+                            <ul class="wishlist-and-cart d-flex flex-wrap align-items-center mb-0 list-unstyled">
                                 <li>
-                                    <a href="javascript:void(0);">
+                                    <a href="javascript:void(0);" class="wishlist">
                                         <i class="fa-regular fa-heart"></i>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript:void(0);">
+                                    <a href="javascript:void(0);" class="cart">
                                         <i class="fa-solid fa-bag-shopping"></i>
                                     </a>
                                 </li>
@@ -187,7 +191,7 @@
 
         </div>
 
-        <div class="header-bottombar">
+        <div class="header-bottombar text-center w-100">
             <div class="container">
 
                 <!-- Shipping info and details button -->
