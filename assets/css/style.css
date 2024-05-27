@@ -282,6 +282,27 @@ body {
   padding: 3px 9px 0 9px;
 }
 
+.sponsors {
+  margin: 100px 0;
+  background-color: var(--color5);
+  padding: 5rem 0;
+}
+.sponsors .sponsors-imgs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+}
+.sponsors .sponsors-imgs a.sponsor-img {
+  display: block;
+}
+.sponsors .sponsors-imgs a.sponsor-img img {
+  width: 100%;
+  transition: var(--transition3);
+}
+.sponsors .sponsors-imgs a.sponsor-img:hover img {
+  filter: invert(0.4);
+}
+
 .products-slider-wrapper {
   padding: 115px 0;
 }
@@ -769,9 +790,6 @@ body {
   color: var(--white);
 }
 
-.footer {
-  padding-top: 100px;
-}
 .footer .footer-top {
   padding: 70px 0;
   border-top: 3px solid rgba(203, 211, 217, 0.3568627451);

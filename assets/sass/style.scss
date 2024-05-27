@@ -349,6 +349,34 @@ body {
     }
 }
 
+// Sponsors section
+.sponsors {
+    margin: 100px 0;
+    background-color: var(--color5);
+    padding: 5rem 0;
+
+    .sponsors-imgs {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+
+        a.sponsor-img {
+            display: block;
+
+            img {
+                width: 100%;
+                transition: var(--transition3);
+            }
+
+            &:hover {
+                img {
+                    filter: invert(0.4);
+                }
+            }
+        }
+    }
+}
+
 // Products page's products slider section
 .products-slider-wrapper {
     padding: 115px 0;
@@ -583,7 +611,7 @@ body {
     }
 }
 
-// Product Single page section
+// Product Single page's Product item section
 .product-item {
     padding: 61px 0 121px 0;
 
@@ -947,11 +975,8 @@ body {
     }
 }
 
-
 // Footer section
 .footer {
-    padding-top: 100px;
-
     .footer-top {
         padding: 70px 0;
         border-top: 3px solid #cbd3d95b;
