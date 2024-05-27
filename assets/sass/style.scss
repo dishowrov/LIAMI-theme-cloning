@@ -377,6 +377,129 @@ body {
     }
 }
 
+// Newsletter section
+.newsletter {
+    padding-bottom: 115px;
+
+    .newsletter-wrap {
+        padding: 5.625rem 6.25rem 6.25rem;
+        background-image: url('../images/newsletter-mockup.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        border-radius: 2.5rem;
+        background-color: var(--color5);
+
+        h6.newsletter-subtitle {
+            color: var(--color4);
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        h2.newsletter-title {
+            font-size: 3rem;
+            color: var(--color1);
+            font-family: var(--DM-Sans);
+            font-weight: 700;
+            margin: 15px 0 29px 0;
+        }
+
+        form.newsletter-form {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            .newsletter-form-input {
+                background-color: #fff;
+                padding: 15px 25px;
+                border-radius: 55px;
+                -webkit-border-radius: 55px;
+                -moz-border-radius: 55px;
+                -ms-border-radius: 55px;
+                -o-border-radius: 55px;
+
+                i {
+                    color: var(--color1);
+                    font-size: 17px;
+                    margin-right: 0.55rem;
+                }
+
+                input {
+                    border: none;
+                }
+            }
+
+            .newsletter-form-btn {
+                button {
+                    border: 1px solid transparent;
+                    position: relative;
+                    display: inline-block;
+                    color: var(--white);
+                    border-radius: 50rem;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    margin-bottom: -6px;
+                    overflow: hidden;
+                    padding: 1.0625rem 2.5rem;
+                    text-align: center;
+                    z-index: 1;
+                    padding: 15px 1.875rem;
+                    font-size: .9375rem;
+                    border-color: var(--color1);
+                    background-color: var(--color1);
+                    cursor: pointer;
+
+                    &:hover {
+                        border: 1px solid var(--color4);
+
+                        span {
+                            transform: translateY(-25px) scale(2);
+                            -webkit-transform: translateY(-25px) scale(2);
+                            -moz-transform: translateY(-25px) scale(2);
+                            -ms-transform: translateY(-25px) scale(2);
+                            -o-transform: translateY(-25px) scale(2);
+                        }
+                    }
+
+                    span {
+                        display: block;
+                        position: absolute;
+                        width: 25%;
+                        height: 100%;
+                        background-color: var(--color4);
+                        -webkit-transform: translateY(150%);
+                        transform: translateY(150%);
+                        -webkit-border-radius: 50%;
+                        border-radius: 50%;
+                        left: calc((var(--n) - 1) * 25%);
+                        -webkit-transition: 0.4s;
+                        transition: 0.4s;
+                        -webkit-transition-delay: calc((var(--n) - 1) * 0.1s);
+                        transition-delay: calc((var(--n) - 1) * 0.1s);
+                        z-index: -1;
+
+                        &:nth-of-type(1) {
+                            --n: 1
+                        }
+
+                        &:nth-of-type(2) {
+                            --n: 2;
+                        }
+
+                        &:nth-of-type(3) {
+                            --n: 3
+                        }
+
+                        &:nth-of-type(4) {
+                            --n: 4
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // Products page's products slider section
 .products-slider-wrapper {
     padding: 115px 0;
