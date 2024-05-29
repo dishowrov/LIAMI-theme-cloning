@@ -810,15 +810,18 @@ body {
   align-items: flex-start;
   gap: 25px;
 }
-.product-item .item-left-part .product-item-slider .item-slider-other-imgs {
-  width: 80px;
-}
-.product-item .item-left-part .product-item-slider .item-slider-other-imgs img {
-  width: 100%;
+.product-item .item-left-part .product-item-slider .item-slider-other-imgs .slider-nav-imgs span {
   height: 75px;
+  width: 75px !important;
+}
+.product-item .item-left-part .product-item-slider .item-slider-other-imgs .slider-nav-imgs span img {
+  height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 25px;
+}
+.product-item .item-left-part .product-item-slider .item-slider-other-imgs .slick-vertical .slick-slide {
+  cursor: pointer !important;
 }
 .product-item .item-left-part .product-item-slider .item-slider-main-img img {
   width: 100%;

@@ -1015,14 +1015,25 @@ body {
             gap: 25px;
 
             .item-slider-other-imgs {
-                width: 80px;
 
-                img {
-                    width: 100%;
-                    height: 75px;
-                    object-fit: cover;
-                    margin-bottom: 25px;
+                .slider-nav-imgs {
+
+                    span {
+                        height: 75px;
+                        width: 75px !important;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
                 }
+                
+                .slick-vertical .slick-slide {
+                    cursor: pointer !important;
+                }
+                
             }
 
             .item-slider-main-img {
