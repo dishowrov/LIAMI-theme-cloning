@@ -75,7 +75,6 @@ $('.products-slider').slick({
 
 
 // Product single item page's products slider functionality
-
 $('.slider-nav-imgs').slick({
   slidesToShow: 4,
   asNavFor: '.slider-main-imgs',
