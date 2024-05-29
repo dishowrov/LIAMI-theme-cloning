@@ -303,6 +303,69 @@ body {
   filter: invert(0.4);
 }
 
+.blog .blog-header h6.blog-subtitle {
+  color: var(--color4);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.blog .blog-header h2.blog-title {
+  font-size: 3rem;
+  color: var(--color1);
+  font-family: var(--DM-Sans);
+  font-weight: 700;
+  margin: 15px 0 29px 0;
+}
+.blog .blog-header .blog-btn a {
+  border: 1px solid var(--color1);
+  position: relative;
+  display: inline-block;
+  color: var(--color1);
+  border-radius: 50rem;
+  font-weight: 500;
+  overflow: hidden;
+  z-index: 1;
+  padding: 1.0625rem 2.5rem;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+.blog .blog-header .blog-btn a:hover {
+  border: 1px solid var(--color4);
+  color: #fff;
+}
+.blog .blog-header .blog-btn a:hover span {
+  transform: translateY(-25px) scale(2);
+  -webkit-transform: translateY(-25px) scale(2);
+  -moz-transform: translateY(-25px) scale(2);
+  -ms-transform: translateY(-25px) scale(2);
+  -o-transform: translateY(-25px) scale(2);
+}
+.blog .blog-header .blog-btn a span {
+  display: block;
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--color4);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.4s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+.blog .blog-header .blog-btn a span:nth-of-type(1) {
+  --n: 1 ;
+}
+.blog .blog-header .blog-btn a span:nth-of-type(2) {
+  --n: 2;
+}
+.blog .blog-header .blog-btn a span:nth-of-type(3) {
+  --n: 3 ;
+}
+.blog .blog-header .blog-btn a span:nth-of-type(4) {
+  --n: 4 ;
+}
+
 .newsletter {
   padding-bottom: 115px;
 }
