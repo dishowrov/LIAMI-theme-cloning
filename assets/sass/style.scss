@@ -414,27 +414,48 @@ body {
 // Home page's Products Collection section
 .collections {
     .collection-item {
-        height: 501px;
         overflow: hidden;
+        height: 501px;
 
-        img {
+        .collection-item-img {
             height: 100%;
             width: 100%;
-            object-fit: cover;
-            transition: var(--transition3);
-            -webkit-transition: var(--transition3);
-            -moz-transition: var(--transition3);
-            -ms-transition: var(--transition3);
-            -o-transition: var(--transition3);
+            overflow: hidden;
+            position: relative;
+
+            &::before {
+                content: "";
+                left: 0;
+                right: 0;
+                bottom: 0;
+                position: absolute;
+                z-index: 1;
+                background-image: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+                background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+                height: 40%;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: var(--transition3);
+                -webkit-transition: var(--transition3);
+                -moz-transition: var(--transition3);
+                -ms-transition: var(--transition3);
+                -o-transition: var(--transition3);
+            }
         }
 
         &:hover {
-            img {
-                transform: scale(1.03);
-                -webkit-transform: scale(1.03);
-                -moz-transform: scale(1.03);
-                -ms-transform: scale(1.03);
-                -o-transform: scale(1.03);
+            .collection-item-img {
+                img {
+                    transform: scale(1.03);
+                    -webkit-transform: scale(1.03);
+                    -moz-transform: scale(1.03);
+                    -ms-transform: scale(1.03);
+                    -o-transform: scale(1.03);
+                }
             }
         }
 
@@ -485,6 +506,195 @@ body {
                         width: 1.75rem;
                     }
                 }
+            }
+        }
+    }
+}
+
+// Home page's New Arrivals section
+.new-arrivals {
+    padding-top: 95px;
+
+    .new-arrivals-header {
+        h6.new-arrivals-subtitle {
+            color: var(--color4);
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        h2.new-arrivals-title {
+            font-size: 3rem;
+            color: var(--color1);
+            font-family: var(--DM-Sans);
+            font-weight: 700;
+            margin: 15px 0 35px 0;
+        }
+    }
+
+    .new-arrivals-slider {
+        .arrivals-slider-card {
+
+            .arrivals-slider-card-top {
+                max-width: 300px;
+                height: 300px;
+                overflow: hidden;
+                position: relative;
+
+                a.arrivals-slider-img {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                span.arrivals-card-icon-btns {
+                    position: absolute;
+                    top: .9375rem;
+                    right: .9375rem;
+                    z-index: 1;
+                    max-width: 2.8125rem;
+
+                    button.arrival-slider-card-icon {
+                        height: 2.1875rem;
+                        width: 2.1875rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        -webkit-border-radius: 50%;
+                        border-radius: 50%;
+                        line-height: 2.5rem;
+                        text-align: center;
+                        background-color: var(--white);
+                        margin: 5px;
+                        overflow: hidden;
+                        border: none;
+                        cursor: pointer;
+                        outline: none;
+                        transition: var(--transition);
+                        -webkit-transition: var(--transition);
+                        -moz-transition: var(--transition);
+                        -ms-transition: var(--transition);
+                        -o-transition: var(--transition);
+
+                        i {
+                            color: var(--color11);
+                        }
+
+                        &:not(.wishlist-icon) {
+                            -webkit-transform: translateX(3.125rem);
+                            transform: translateX(3.125rem);
+                            opacity: 0;
+                            visibility: hidden;
+                        }
+
+                        &:hover {
+                            i {
+                                color: var(--color4);
+                            }
+                        }
+
+
+                    }
+
+                }
+            }
+
+            .arrivals-slider-card-bottom {
+                h4.arrivals-slider-card-title {
+                    margin-top: 19px;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 1.375rem;
+                        color: var(--color1);
+                        font-family: var(--DM-Sans);
+                        font-weight: 700;
+                    }
+                }
+
+                p.arrivals-slider-card-price {
+                    color: var(--color3);
+                    font-size: 1rem;
+                    margin: 0;
+                }
+
+                p.arrivals-slider-card-colors {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 5px;
+        
+                    a.color {
+                        height: .9375rem;
+                        width: .9375rem;
+                        -webkit-border-radius: 50%;
+                        border-radius: 50%;
+                        position: relative;
+                        display: inline-block;
+                        margin: 4px;
+        
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: -4px;
+                            left: -4px;
+                            right: -4px;
+                            bottom: -4px;
+                            border: 1px solid var(--color1);
+                            -webkit-border-radius: 50%;
+                            border-radius: 50%;
+                            -webkit-transform: scale(.5);
+                            transform: scale(.5);
+                            opacity: 0;
+                            transition: var(--transition);
+                            -webkit-transition: var(--transition);
+                            -moz-transition: var(--transition);
+                            -ms-transition: var(--transition);
+                            -o-transition: var(--transition);
+                        }
+        
+                        &:hover {
+                            &::after {
+                                opacity: 1;
+                                -webkit-transform: scale(1);
+                                transform: scale(1);
+                            }
+                        }
+        
+                        &:nth-of-type(1) {
+                            background-color: var(--color6);
+                        }
+        
+                        &:nth-of-type(2) {
+                            background-color: var(--color7);
+                        }
+        
+                        &:nth-of-type(3) {
+                            background-color: var(--color8);
+                        }
+        
+                    }
+        
+                    a.color+a.color {
+                        margin-left: 1.5rem;
+                    }
+                }
+            }
+
+            &:hover {
+                .arrivals-slider-card-top {
+                    span.arrivals-card-icon-btns {
+                        button.arrival-slider-card-icon {
+                            &:not(.wishlist-icon) {
+                                opacity: 1;
+                                visibility: visible;
+                                -webkit-transform: translateX(0);
+                                transform: translateX(0);
+                            }
+                        }
+                    }
+                }
+
             }
         }
     }

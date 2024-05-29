@@ -60,6 +60,15 @@ $(".home-hero-slider").on(
   }
 );
 
+// Home page's New Arrival section's functionality
+$('.new-arrivals-slider').slick({
+  dots: false,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4500
+});
+
 
 
 // Products page's products slider section
@@ -94,3 +103,5 @@ $('.slider-main-imgs').slick({
   verticalSwiping: true,
   infinite: true,
 });
+
+
