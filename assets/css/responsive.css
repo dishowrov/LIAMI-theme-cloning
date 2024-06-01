@@ -46,6 +46,10 @@
 }
 
 @media (max-width: 900px) {
+    .home-hero .home-hero-slider .hero-item .hero-item-info h5.hero-subtitle {
+        margin: 0 0 -5px 0;
+    }
+
     .home-hero .home-hero-slider .hero-item .hero-item-info h1.hero-title {
         font-size: 3rem;
         margin: 15px 0;
@@ -77,10 +81,11 @@
 
     .home-hero .home-hero-slider .hero-item-2 h5.hero-subtitle {
         color: var(--color1);
-      }
-      .home-hero .home-hero-slider .hero-item-2 h1.hero-title {
+    }
+
+    .home-hero .home-hero-slider .hero-item-2 h1.hero-title {
         color: var(--color4);
-      }
+    }
 }
 
 @media (min-width: 766.99px) and (max-width: 1024px) {
@@ -127,11 +132,65 @@
     }
 
     .footer .footer-bottom .footer-bottom-links ul {
-       justify-content: center;
+        justify-content: center;
     }
 
     .footer .footer-bottom .footer-bottom-payment {
         justify-content: center;
+    }
+
+    .home-products h2.home-products-title {
+        font-size: 2.3rem;
+        margin: 15px 0 25px 0;
+    }
+
+    .reviews .reviews-header h2.reviews-title {
+        font-size: 2.3rem;
+        margin: 15px 0 25px 0;
+    }
+
+    .new-arrivals .new-arrivals-header h6.new-arrivals-subtitle {
+        text-align: center
+    }
+
+    .new-arrivals .new-arrivals-header h2.new-arrivals-title {
+        text-align: center;
+        font-size: 2.3rem;
+        margin: 15px 0 25px 0;
+    }
+
+    .featured-products .featured-products-header h6.featured-products-subtitle {
+        text-align: center
+    }
+
+    .featured-products .featured-products-header h2.featured-products-title {
+        text-align: center;
+        font-size: 2.3rem;
+        margin: 15px 0 25px 0;
+    }
+
+    .blog .blog-header h6.blog-subtitle {
+        text-align: center
+    }
+
+    .blog .blog-header h2.blog-title {
+        text-align: center;
+        font-size: 2.3rem;
+        margin: 15px 0 25px 0;
+    }
+
+    .blog .blog-header .blog-btn a {
+        padding: 13px 35px;
+    }
+
+    .newsletter .newsletter-wrap h6.newsletter-subtitle {
+        text-align: center
+    }
+
+    .newsletter .newsletter-wrap h2.newsletter-title {
+        text-align: center;
+        font-size: 2.3rem;
+        margin: 15px 0 25px 0;
     }
 }
 
@@ -194,7 +253,7 @@
         padding-top: 95px;
     }
 
-    .footer .footer-top .footer-top-widget ul li + li {
+    .footer .footer-top .footer-top-widget ul li+li {
         margin-top: 9px;
     }
 }
