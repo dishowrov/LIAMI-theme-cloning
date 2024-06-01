@@ -102,7 +102,7 @@ $('.new-arrivals-slider').slick({
 // Products page's products slider section
 $('.products-slider').slick({
   dots: true,
-  arrows: true,
+  arrows: false,
   infinite: false,
   speed: 999,
   slidesToShow: 1,

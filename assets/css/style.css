@@ -1426,6 +1426,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px 30px;
+  padding: 0 15px;
 }
 .products-slider-wrapper .products-slider-inner .products-slider-items .slider-item .slider-item-top {
   height: 535px;

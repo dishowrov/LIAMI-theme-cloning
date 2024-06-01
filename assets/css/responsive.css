@@ -37,12 +37,22 @@
     .home-products .products-tab-wrapper .tab-card .tab-card-top {
         max-width: 100%;
     }
+
+    .products-slider-wrapper .products-slider-inner .products-slider-items .slider-item .slider-item-top {
+        height: 385px;
+    }
 }
 
 @media (max-width: 991px) {
     .reviews-slider-right {
         padding-top: 25px
     }
+
+    .product-item .item-left-part .product-item-slider .item-slider-main-img img {
+        width: 85%;
+        height: 490px;
+    }
+
 }
 
 @media (max-width: 900px) {
@@ -85,6 +95,10 @@
 
     .home-hero .home-hero-slider .hero-item-2 h1.hero-title {
         color: var(--color4);
+    }
+
+    .products-slider-wrapper .products-slider-inner .products-slider-items .slider-item .slider-item-top {
+        height: 295px;
     }
 }
 
@@ -192,6 +206,43 @@
         font-size: 2.3rem;
         margin: 15px 0 25px 0;
     }
+
+    .products-slider-wrapper .products-slider-inner .products-slider-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 23px;
+    }
+
+    .product-item .item-left-part .product-item-slider .item-slider-main-img img {
+        width: 100%;
+    }
+
+    .product-item .item-left-part span.item-sale {
+        left: 15%;
+        right: auto;
+        top: 3.125rem;
+    }
+
+    .product-item .item-right-part .item-bottom a.item-add-to-cart {
+        padding: 13px 19px;
+        min-width: auto;
+    }
+
+    .product-item .item-right-part .item-bottom a.item-wishlist {
+        height: 2.75rem;
+        width: 2.75rem;
+        font-size: 1.25rem;
+        line-height: 2.8rem;
+    }
+
+    .product-item .item-right-part .item-color span {
+        min-width: auto;
+        margin-right: 1.125rem;
+    }
+    
+    .product-item .item-right-part p.item-size span {
+        margin-right: 1rem;
+        min-width: auto;
+    }
 }
 
 @media only screen and (max-width: 655px) {
@@ -270,5 +321,14 @@
     .newsletter .newsletter-wrap form.newsletter-form {
         flex-direction: column !important;
         gap: 15px;
+    }
+
+    .products-slider-wrapper .products-slider-inner .products-slider-items {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    .products-slider-wrapper .products-slider-inner .products-slider-items .slider-item .slider-item-top {
+        height: 399px;
     }
 }
