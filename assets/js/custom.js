@@ -20,28 +20,6 @@ $('.home-hero-slider').slick({
     "<button type='button' class='slick-arrow prev-arrow'> <i class='fa-solid fa-angle-left'></i> </button>",
   nextArrow:
     "<button type='button' class='slick-arrow next-arrow'> <i class='fa-solid fa-angle-right'></i> </button>",
-  responsive: [
-    {
-      breakpoint: 850,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true,
-        arrows: true,
-      },
-    },
-    {
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false,
-        arrows: true,
-      },
-    },
-  ],
 });
 
 $(".home-hero-slider").on(
@@ -97,6 +75,26 @@ $('.new-arrivals-slider').slick({
     "<button type='button' class='slick-arrow prev-arrow'> <i class='fa-solid fa-angle-left'></i> </button>",
   nextArrow:
     "<button type='button' class='slick-arrow next-arrow'> <i class='fa-solid fa-angle-right'></i> </button>",
+    responsive: [
+      {
+        breakpoint: 1275,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 937,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 555,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
 });
 
 
