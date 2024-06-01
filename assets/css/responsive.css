@@ -1,0 +1,105 @@
+@media (max-width: 1475px) {
+    .home-hero .home-hero-slider .hero-item .hero-item-info {
+        top: 45%;
+        transform: translateY(-45%);
+    }
+
+    .home-hero .home-hero-slider button.slick-arrow {
+        top: 40%;
+    }
+
+    .home-hero .home-hero-slider button.slick-arrow.prev-arrow {
+        left: 3%;
+    }
+
+    .home-hero .home-hero-slider button.slick-arrow.next-arrow {
+        right: 3%;
+    }
+
+    .home-hero ul.slick-dots {
+        top: 75%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .home-hero .home-hero-slider .hero-item {
+        height: 525px;
+    }
+
+    .home-hero ul.slick-dots {
+        display: none !important
+    }
+
+    .home-products .products-tab-wrapper .tab-content .tab-cards-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .home-products .products-tab-wrapper .tab-card .tab-card-top {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .reviews-slider-right {
+        padding-top: 25px
+    }
+}
+
+@media (max-width: 900px) {
+    .home-hero .home-hero-slider .hero-item .hero-item-info h1.hero-title {
+        font-size: 3rem;
+        margin: 15px 0;
+        width: 100%;
+    }
+
+    .home-hero .home-hero-slider .hero-item .hero-item-info a.hero-btn {
+        padding: 13px 29px;
+    }
+
+    .home-hero .home-hero-slider .hero-item img {
+        height: 50%;
+    }
+
+    .home-hero .home-hero-slider .hero-item .hero-item-info {
+        background: #cccccc9c;
+        height: 50%;
+        top: 50%;
+        left: 0;
+        right: 0;
+        padding: 9px 15px;
+        /* width: calc(100% - 15px) !important; */
+        margin: 0px 15px;
+        overflow: hidden;
+        transform: translateY(-0%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 766.99px) and (max-width: 1024px) {
+    .collections .collection-item .collection-item-info h3 {
+        font-size: 2.5rem;
+    }
+
+    .collections .collection-item .collection-item-info {
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .collections .collection-item {
+        height: 525px;
+        margin-bottom: 15px
+    }
+
+    .home-products .products-tab-wrapper .tab-content .tab-cards-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .home-products .products-tab-wrapper .tab-content .tab-cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+}

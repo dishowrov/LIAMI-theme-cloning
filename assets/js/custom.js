@@ -2,7 +2,7 @@
 // Home page's hero slider section
 $('.home-hero-slider').slick({
   arrows: true,
-  dots: false,
+  dots: true,
   initialSlide: 0,
   infinite: true,
   slidesToShow: 1,

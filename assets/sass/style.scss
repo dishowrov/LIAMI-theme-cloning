@@ -293,6 +293,7 @@ body {
 // Home page's Hero section
 .home-hero {
     padding: 25px 0 55px 0;
+    position: relative;
 
     .home-hero-slider {
         .hero-item {
@@ -475,6 +476,58 @@ body {
             right: -35px;
         }
     }
+
+    ul.slick-dots {
+        overflow: hidden;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 81%;
+        left: 5%;
+        z-index: 1;
+
+        li {
+            font-size: 0;
+            padding: 0;
+            line-height: 1;
+            margin-right: 15px;
+
+            button {
+                height: 19px;
+                width: 19px;
+                border-radius: 50%;
+                background: transparent;
+                cursor: pointer;
+                border: none;
+                position: relative;
+                outline: none;
+
+                &::after {
+                    content: "";
+                    height: 10px;
+                    width: 10px;
+                    background-color: #fff;
+                    -webkit-border-radius: 50%;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-51%, -52%);
+                    -webkit-transform: translate(-51%, -52%);
+                    -moz-transform: translate(-51%, -52%);
+                    -ms-transform: translate(-51%, -52%);
+                    -o-transform: translate(-51%, -52%);
+                }
+            }
+        }
+
+        li.slick-active {
+            button {
+                border: 1px solid #FFF;
+            }
+        }
+    }
 }
 
 // Home page's Products Collection section
@@ -578,16 +631,16 @@ body {
 }
 
 // Home's products tab section
-.hero-products {
+.home-products {
     padding: 105px 0;
 
-    h6.hero-products-subtitle {
+    h6.home-products-subtitle {
         color: var(--color4);
         font-size: 1.25rem;
         font-weight: 500;
     }
 
-    h2.hero-products-title {
+    h2.home-products-title {
         font-size: 3rem;
         color: var(--color1);
         font-family: var(--DM-Sans);
@@ -597,7 +650,7 @@ body {
 
     .products-tab-wrapper {
         .nav-tabs {
-           justify-content: center;
+            justify-content: center;
         }
 
         .tab-content {
@@ -608,6 +661,7 @@ body {
                 padding: 29px 0;
             }
         }
+
         .tab-card {
 
             .tab-card-top {
