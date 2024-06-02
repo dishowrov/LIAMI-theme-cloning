@@ -177,12 +177,12 @@ body {
   transition: width 0.3s ease;
   overflow: hidden;
   z-index: 20;
-  padding: 25px;
 }
 .header .header-navbar .header-navbar-menues ul li.has-cart-details .cart-list-sidebar .cart-sidebar-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 25px;
 }
 .header .header-navbar .header-navbar-menues ul li.has-cart-details .cart-list-sidebar .cart-sidebar-top h3 {
   font-size: 23px;
@@ -193,7 +193,7 @@ body {
 .header .header-navbar .header-navbar-menues ul li.has-cart-details .cart-list-sidebar .cart-sidebar-items {
   max-height: 65%;
   overflow-y: scroll;
-  padding: 19px 0;
+  padding: 25px;
   margin: 19px 0;
   border-top: 1px solid var(--color12);
   border-bottom: 1px solid var(--color12);
@@ -278,6 +278,9 @@ body {
   font-size: 19px;
   color: var(--color1);
 }
+.header .header-navbar .header-navbar-menues ul li.has-cart-details .cart-list-sidebar .cart-sidebar-bottom {
+  padding: 25px;
+}
 .header .header-navbar .header-navbar-menues ul li.has-cart-details .cart-list-sidebar .cart-sidebar-bottom .cart-bottom-head {
   display: flex;
   justify-content: space-between;
@@ -296,6 +299,7 @@ body {
   color: var(--color1);
 }
 .header .header-navbar .header-navbar-menues ul li.has-cart-details .cart-list-sidebar .cart-sidebar-bottom .cart-btns {
+  padding-top: 25px;
   display: flex;
   align-items: center;
   gap: 19px;
@@ -666,6 +670,12 @@ body {
   padding: 0 15px;
   height: 700px;
   position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .home-hero .home-hero-slider .hero-item img {
   height: 100%;
