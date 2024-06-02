@@ -75,26 +75,26 @@ $('.new-arrivals-slider').slick({
     "<button type='button' class='slick-arrow prev-arrow'> <i class='fa-solid fa-angle-left'></i> </button>",
   nextArrow:
     "<button type='button' class='slick-arrow next-arrow'> <i class='fa-solid fa-angle-right'></i> </button>",
-    responsive: [
-      {
-        breakpoint: 1275,
-        settings: {
-          slidesToShow: 3,
-        },
+  responsive: [
+    {
+      breakpoint: 1275,
+      settings: {
+        slidesToShow: 3,
       },
-      {
-        breakpoint: 937,
-        settings: {
-          slidesToShow: 2,
-        },
+    },
+    {
+      breakpoint: 937,
+      settings: {
+        slidesToShow: 2,
       },
-      {
-        breakpoint: 555,
-        settings: {
-          slidesToShow: 1,
-        },
+    },
+    {
+      breakpoint: 555,
+      settings: {
+        slidesToShow: 1,
       },
-    ],
+    },
+  ],
 });
 
 
@@ -113,23 +113,24 @@ $('.products-slider').slick({
 
 // Product single item page's products slider functionality
 $('.slider-nav-imgs').slick({
-  slidesToShow: 4,
   asNavFor: '.slider-main-imgs',
-  vertical: true,
   focusOnSelect: true,
   autoplay: false,
+  vertical: true,
   slidesToShow: 3,
+  slidesToScroll: 1,
   arrows: false,
-  infinite: true,
+  infinite: true
 });
 
 $('.slider-main-imgs').slick({
   slidesToShow: 1,
+  slidesToScroll: 1,
   arrows: false,
-  asNavFor: '.slider-nav-imgs',
   vertical: true,
   verticalSwiping: true,
-  infinite: true,
+  asNavFor: '.slider-nav-imgs',
+  infinite: true
 });
 
 
