@@ -1,9 +1,12 @@
-// Header mobile menu
+// Header mobile menu an cart sidebar
 document.addEventListener('DOMContentLoaded', function () {
-  const menuOpenButton = document.querySelector('.mobile-menu-open');
-  const menuCloseButton = document.querySelector('.mobile-menu-close');
-  const backgroundLayer = document.querySelector('.background-layer');
-  const mobileMenuItems = document.querySelector('.mobile-menu-items');
+  let menuOpenButton = document.querySelector('.mobile-menu-open');
+  let menuCloseButton = document.querySelector('.mobile-menu-close');
+  let mobileMenuItems = document.querySelector('.mobile-menu-items');
+  let backgroundLayer = document.querySelector('.background-layer');
+  let cartSidebarOpenButton = document.querySelector('.cart-list-open-btn');
+  let cartSidebarCloseButtion = document.querySelector('.sidebar-close-btn');
+  let cartSidebar = document.querySelector('.cart-list-sidebar');
 
   menuOpenButton.addEventListener('click', function () {
     backgroundLayer.style.width = '100%';
@@ -15,6 +18,18 @@ document.addEventListener('DOMContentLoaded', function () {
     backgroundLayer.style.width = '0';
     backgroundLayer.style.height = '0';
     mobileMenuItems.style.width = '0';
+  });
+
+  cartSidebarOpenButton.addEventListener('click', function () {
+    backgroundLayer.style.width = '100%';
+    backgroundLayer.style.height = '100%';
+    cartSidebar.style.width = '35%';
+  });
+  
+  cartSidebarCloseButtion.addEventListener('click', function () {
+    backgroundLayer.style.width = '0';
+    backgroundLayer.style.height = '0';
+    cartSidebar.style.width = '0';
   });
 });
 
