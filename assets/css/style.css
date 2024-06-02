@@ -344,6 +344,7 @@ body {
 .header .header-navbar .header-navbar-right ul.wishlist-and-cart {
   gap: 15px;
   padding-left: 15px;
+  margin: 0;
 }
 .header .header-navbar .header-navbar-right ul.wishlist-and-cart li a {
   font-size: 20px;
@@ -371,41 +372,60 @@ body {
   text-decoration: underline;
   color: inherit;
 }
-.header .header-mobile-menu button.mobile-menu-open {
-  background-color: transparent;
-  border: none;
-  padding: 0 0 0 5px;
+.header .header-mobile-menu {
+  position: relative;
 }
-.header .header-mobile-menu button.mobile-menu-open i {
-  font-size: 19px;
+.header .header-mobile-menu .mobile-menu-open {
+  font-size: 24px;
+  cursor: pointer;
+}
+.header .header-mobile-menu .background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: width 0.3s ease, height 0.3s ease;
+  z-index: 10;
 }
 .header .header-mobile-menu .mobile-menu-items {
-  background-color: #FFF;
-  border-left: 3px solid red;
-  padding: 15px;
   position: fixed;
   top: 0;
   right: 0;
-  width: 30%;
+  width: 0;
   height: 100%;
-  z-index: 9999999;
-  transition: var(--transition);
-  -webkit-transition: var(--transition);
-  -moz-transition: var(--transition);
-  -ms-transition: var(--transition);
-  -o-transition: var(--transition);
-  transform: translateX(-30%);
-  -webkit-transform: translateX(-30%);
-  -moz-transform: translateX(-30%);
-  -ms-transform: translateX(-30%);
-  -o-transform: translateX(-30%);
+  background: #fff;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  z-index: 20;
 }
-.header .header-mobile-menu:hover .mobile-menu-items {
-  transform: translateX(0%);
-  -webkit-transform: translateX(0%);
-  -moz-transform: translateX(0%);
-  -ms-transform: translateX(0%);
-  -o-transform: translateX(0%);
+.header .header-mobile-menu .mobile-menu-close {
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.header .header-mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 15px;
+}
+.header .header-mobile-menu ul li {
+  text-align: left;
+}
+.header .header-mobile-menu .main-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.header .header-mobile-menu .sub-menu {
+  display: none;
+}
+.header .header-mobile-menu .has-sub-menu:hover .sub-menu {
+  display: block;
 }
 
 .home-hero {

@@ -1,3 +1,26 @@
+// Header mobile menu
+document.addEventListener('DOMContentLoaded', function () {
+  const menuOpenButton = document.querySelector('.mobile-menu-open');
+  const menuCloseButton = document.querySelector('.mobile-menu-close');
+  const backgroundLayer = document.querySelector('.background-layer');
+  const mobileMenuItems = document.querySelector('.mobile-menu-items');
+
+  menuOpenButton.addEventListener('click', function () {
+    backgroundLayer.style.width = '100%';
+    backgroundLayer.style.height = '100%';
+    mobileMenuItems.style.width = '50%';
+  });
+
+  menuCloseButton.addEventListener('click', function () {
+    backgroundLayer.style.width = '0';
+    backgroundLayer.style.height = '0';
+    mobileMenuItems.style.width = '0';
+  });
+});
+
+
+
+
 
 // Home page's hero slider section
 $('.home-hero-slider').slick({
