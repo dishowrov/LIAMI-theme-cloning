@@ -214,6 +214,11 @@ body {
   height: 100%;
   width: 100%;
 }
+.header .header-navbar .header-navbar-menues ul li.has-cart-details .cart-list-sidebar .cart-sidebar-items .cart-sidebar-item-left span.item-img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .header .header-navbar .header-navbar-menues ul li.has-cart-details .cart-list-sidebar .cart-sidebar-items .cart-sidebar-item-left button.remove-item {
   background-color: #ccc;
   color: #222;
@@ -1707,7 +1712,7 @@ body {
 }
 .newsletter .newsletter-wrap {
   padding: 5.625rem 6.25rem 6.25rem;
-  background-image: url("../images/newsletter-mockup.png");
+  background-image: url("../images/newsletter-mockup_6_11zon.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -1807,7 +1812,7 @@ body {
 
 .products-hero {
   position: relative;
-  background: url("../images/nimble-made.jpg") no-repeat;
+  background: url("../images/nimble-made_7_11zon.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 }

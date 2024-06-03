@@ -105,46 +105,382 @@
             <div class="container">
                 <div class="row">
 
-                    <!-- Navigation menues -->
-                    <div class="col-lg-5">
+                    <!-- Navigation menus -->
+                    <div class="col-lg-5 col-md-12">
                         <div class="header-navbar-menues">
                             <ul>
-                                <li>
-                                    <span class="cart-list-toggle-btn">
+                                <li class="has-cart-details">
+                                    <span class="cart-list-open-btn">
                                         <i class="fa-solid fa-bars"></i>
                                     </span>
+
+                                    <div class="background-layer"></div>
+
+                                    <div class="cart-list-sidebar">
+                                        <div class="cart-sidebar-top">
+                                            <h3>Cart review</h3>
+
+                                            <span class="sidebar-close-btn">
+                                                <i class="fas fa-times"></i>
+                                            </span>
+                                        </div>
+
+                                        <div class="cart-sidebar-items">
+                                            <div class="per-item">
+                                                <div class="cart-sidebar-item-left">
+                                                    <span class="item-img">
+                                                        <img src="./assets/images/card-img1-2_29_11zon.jpg"
+                                                            alt="Added item's image" class="img-fluid w-100">
+                                                    </span>
+
+                                                    <button class="remove-item">
+                                                        <i class="fas fa-times"></i>
+                                                    </button>
+                                                </div>
+
+                                                <div class="cart-sidebar-item-right">
+                                                    <h6>Commodo Blown Lamp</h6>
+
+                                                    <p>
+                                                        <span class="item-qty">
+                                                            <button
+                                                                class="item-qty-btn item-quantity-decreament">-</button>
+                                                            <input type="number" class="item-qty-no" value="1" min="1"
+                                                                max="1001" readonly>
+                                                            <button
+                                                                class="item-qty-btn item-quantity-increament">+</button>
+                                                        </span>
+
+                                                        <span class="item-total-price">$275.00</span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="per-item">
+                                                <div class="cart-sidebar-item-left">
+                                                    <span class="item-img">
+                                                        <img src="./assets/images/keagan-henmanjpg_3_11zon.jpg"
+                                                            alt="Added item's image" class="img-fluid w-100">
+                                                    </span>
+
+                                                    <button class="remove-item">
+                                                        <i class="fas fa-times"></i>
+                                                    </button>
+                                                </div>
+
+                                                <div class="cart-sidebar-item-right">
+                                                    <h6>Commodo Blown Lamp</h6>
+
+                                                    <p>
+                                                        <span class="item-qty">
+                                                            <button
+                                                                class="item-qty-btn item-quantity-decreament">-</button>
+                                                            <input type="number" class="item-qty-no" value="1" min="1"
+                                                                max="1001" readonly>
+                                                            <button
+                                                                class="item-qty-btn item-quantity-increament">+</button>
+                                                        </span>
+
+                                                        <span class="item-total-price">$275.00</span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="per-item">
+                                                <div class="cart-sidebar-item-left">
+                                                    <span class="item-img">
+                                                        <img src="./assets/images/product-img1-7_13_11zon.jpg"
+                                                            alt="Added item's image" class="img-fluid w-100">
+                                                    </span>
+
+                                                    <button class="remove-item">
+                                                        <i class="fas fa-times"></i>
+                                                    </button>
+                                                </div>
+
+                                                <div class="cart-sidebar-item-right">
+                                                    <h6>Commodo Blown Lamp</h6>
+
+                                                    <p>
+                                                        <span class="item-qty">
+                                                            <button
+                                                                class="item-qty-btn item-quantity-decreament">-</button>
+                                                            <input type="number" class="item-qty-no" value="1" min="1"
+                                                                max="1001" readonly>
+                                                            <button
+                                                                class="item-qty-btn item-quantity-increament">+</button>
+                                                        </span>
+
+                                                        <span class="item-total-price">$275.00</span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="cart-sidebar-bottom">
+                                            <span class="cart-bottom-head">
+                                                <h5>Subtotal</h5>
+                                                <p>$500</p>
+                                            </span>
+
+                                            <span class="cart-btns">
+                                                <a href="#" class="cart-btn1">
+                                                    View Cart
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </a>
+
+                                                <a href="#" class="cart-btn2">
+                                                    Checkout
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </li>
 
-                                <li>
-                                    Layouts
-                                    <i class="fa-solid fa-angle-down"></i>
+                                <li class="has-mega-menu">
+                                    <span class="main-item">
+                                        Layouts
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </span>
+
+                                    <div class="mega-menu">
+                                        <div class="container">
+                                            <div class="row menu-row">
+
+                                                <div class="col-2">
+                                                    <ul>
+                                                        <li>
+                                                            <h3> Home Style </h3>
+                                                        </li>
+                                                        <li> <a href="#"> Home Style 1 </a> </li>
+                                                        <li> <a href="#"> Home Style 2 </a> </li>
+                                                        <li> <a href="#"> Home Style 3 </a> <span
+                                                                class="mega-menu-item-badge">New</span> </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <ul>
+                                                        <li>
+                                                            <h3> Blog Style </h3>
+                                                        </li>
+                                                        <li> <a href="#"> Blog Style 1 </a> <span
+                                                                class="mega-menu-item-badge">New</span> </li>
+                                                        <li> <a href="#"> Blog Style 2 </a> </li>
+                                                        <li> <a href="#"> Blog Style 3 </a> </li>
+                                                        <li> <a href="#"> Blog Style 4 </a> <span
+                                                                class="mega-menu-item-badge">New</span> </li>
+                                                        <li> <a href="#"> Blog Style 5 </a> </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <ul>
+                                                        <li>
+                                                            <h3> Product Style </h3>
+                                                        </li>
+                                                        <li> <a href="#"> Product Style 1 </a> </li>
+                                                        <li> <a href="#"> Product Style 2 </a> <span
+                                                                class="mega-menu-item-badge">New</span> </li>
+                                                        <li> <a href="#"> Product Style 3 </a> </li>
+                                                        <li> <a href="#"> Product Style 4 </a> </li>
+                                                        <li> <a href="#"> Product Style 5 </a> </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <ul>
+                                                        <li>
+                                                            <h3> Header Style </h3>
+                                                        </li>
+                                                        <li> <a href="#"> Header Style 1 </a> </li>
+                                                        <li> <a href="#"> Header Style 2 </a> <span
+                                                                class="mega-menu-item-badge">New</span> </li>
+                                                        <li> <a href="#"> Header Style 3 </a> </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="mega-menu-item-img">
+                                                                    <img src="./assets/images/card-img1-2_29_11zon.jpg"
+                                                                        alt="Special Product">
+
+                                                                    <div class="info">
+                                                                        <h4>Special Product</h4>
+                                                                        <p>Lorem ipsum dolor sit amet</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="mega-menu-item-img">
+                                                                    <img src="./assets/images/featured-product-img1-2.jpg"
+                                                                        alt="Special Product">
+
+                                                                    <div class="info">
+                                                                        <h4>Featured Product</h4>
+                                                                        <p>Lorem ipsum dolor sit amet</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="mega-menu-item-img">
+                                                                    <img src="./assets/images/testi-img1-1_22_11zon.jpg"
+                                                                        alt="Special Product">
+
+                                                                    <div class="info">
+                                                                        <h4>New Product</h4>
+                                                                        <p>Lorem ipsum dolor sit amet</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="mega-menu-item-img">
+                                                                    <img src="./assets/images/product-img1-10_14_11zon.jpg"
+                                                                        alt="Special Product">
+
+                                                                    <div class="info">
+                                                                        <h4>Coming Soon</h4>
+                                                                        <p>Lorem ipsum dolor sit amet</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
 
-                                <li>
-                                    Shop
-                                    <i class="fa-solid fa-angle-down"></i>
+                                <li class="has-sub-menu">
+                                    <span class="main-item">
+                                        Shop
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </span>
+
+                                    <div class="sub-menu">
+                                        <ul>
+                                            <li> <a href="#"> Cart </a> </li>
+                                            <li> <a href="#"> Checkout </a> </li>
+                                            <li> <a href="#"> Wishlist </a> </li>
+                                        </ul>
+                                    </div>
                                 </li>
 
-                                <li>
-                                    Product
-                                    <i class="fa-solid fa-angle-down"></i>
+                                <li class="has-sub-menu">
+                                    <span class="main-item">
+                                        Product
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </span>
+
+                                    <div class="sub-menu">
+                                        <ul>
+                                            <li> <a href="#"> Product Style 1 </a> </li>
+                                            <li> <a href="#"> Product Style 2 </a> </li>
+                                            <li> <a href="#"> Product Style 3 </a> </li>
+                                            <li> <a href="#"> Product Style 4 </a> </li>
+                                            <li> <a href="#"> Product Style 5 </a> </li>
+                                        </ul>
+                                    </div>
                                 </li>
 
-                                <li>
-                                    Pages
-                                    <i class="fa-solid fa-angle-down"></i>
+                                <li class="has-sub-menu">
+                                    <span class="main-item">
+                                        Pages
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </span>
+
+                                    <div class="sub-menu">
+                                        <ul>
+                                            <li> <a href="#"> About </a> </li>
+                                            <li> <a href="#"> FAQ </a> </li>
+                                            <li> <a href="#"> Login </a> </li>
+                                            <li> <a href="#"> Sign Up </a> </li>
+                                            <li> <a href="#"> Forgot Password </a> </li>
+                                            <li> <a href="#"> Content Elements </a> </li>
+                                            <li> <a href="#"> Contact Style 1 </a> </li>
+                                            <li> <a href="#"> Contact Style 2 </a> </li>
+                                        </ul>
+                                    </div>
                                 </li>
 
-                                <li>
-                                    Blog
-                                    <i class="fa-solid fa-angle-down"></i>
+                                <li class="has-mega-menu">
+                                    <span class="main-item">
+                                        Blog
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </span>
+
+                                    <div class="mega-menu">
+                                        <div class="container">
+                                            <div class="row menu-row">
+
+                                                <div class="col-4">
+                                                    <ul>
+                                                        <li> <a href="#"> Blog Style 1 </a> </li>
+                                                        <li> <a href="#"> Blog Style 2 </a> </li>
+                                                        <li> <a href="#"> Blog Style 3 </a> <span
+                                                                class="mega-menu-item-badge">New</span> </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <ul>
+                                                        <li> <a href="#"> Blog Style 4 </a> </li>
+                                                        <li> <a href="#"> Blog Single 1 </a> </li>
+                                                        <li> <a href="#"> Blog Single 2 </a> </li>
+                                                        <li> <a href="#"> Audio </a> <span
+                                                                class="mega-menu-item-badge">New</span> </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <ul>
+                                                        <li> <a href="#"> Video </a> <span
+                                                                class="mega-menu-item-badge">New</span> </li>
+                                                        <li> <a href="#"> Quote </a> </li>
+                                                        <li> <a href="#"> Gallery </a> </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- Site logo -->
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-6 col-6">
                         <div class="header-logo">
                             <a href="./index.html">
                                 <img src="./assets/images/logo.svg" alt="Liami">
@@ -153,13 +489,12 @@
                     </div>
 
                     <!-- Search box, wishlist and cart -->
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 col-md-6 col-6">
                         <div class="header-navbar-right">
                             <form action="" class="header-search">
                                 <button>
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </button>
-
                                 <input type="search" placeholder="Search">
                             </form>
 
@@ -175,19 +510,116 @@
                                         <i class="fa-solid fa-bag-shopping"></i>
                                     </a>
                                 </li>
+
+                                <!-- Mobile Responsive Menu -->
+                                <li>
+                                    <div class="header-mobile-menu">
+                                        <div class="header-mobile-menu-inner">
+                                            <button class="mobile-menu-open">
+                                                <i class="fa-solid fa-bars"></i>
+                                            </button>
+
+                                            <div class="background-layer"></div>
+
+                                            <div class="mobile-menu-items">
+                                                <button class="mobile-menu-close">
+                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                </button>
+
+                                                <ul>
+                                                    <li class="has-sub-menu">
+                                                        <span class="main-item">
+                                                            Home
+                                                            <i class="fa-solid fa-angle-down"></i>
+                                                        </span>
+
+                                                        <div class="sub-menu">
+                                                            <ul>
+                                                                <li> <a href="#"> Home Style 1 </a> </li>
+                                                                <li> <a href="#"> Home Style 2 </a> </li>
+                                                                <li> <a href="#"> Home Style 3 </a> </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="has-sub-menu">
+                                                        <span class="main-item">
+                                                            Shop
+                                                            <i class="fa-solid fa-angle-down"></i>
+                                                        </span>
+
+                                                        <div class="sub-menu">
+                                                            <ul>
+                                                                <li> <a href="#"> Cart </a> </li>
+                                                                <li> <a href="#"> Checkout </a> </li>
+                                                                <li> <a href="#"> Wishlist </a> </li>
+                                                                <li> <a href="#"> Product Style 1 </a> </li>
+                                                                <li> <a href="#"> Product Style 2 </a> </li>
+                                                                <li> <a href="#"> Product Style 3 </a> </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="has-sub-menu">
+                                                        <span class="main-item">
+                                                            Blog
+                                                            <i class="fa-solid fa-angle-down"></i>
+                                                        </span>
+
+                                                        <div class="sub-menu">
+                                                            <ul>
+                                                                <li> <a href="#"> Blog Style 1 </a> </li>
+                                                                <li> <a href="#"> Blog Style 2 </a> </li>
+                                                                <li> <a href="#"> Blog Style 3 </a> </li>
+                                                                <li> <a href="#"> Blog Single 1 </a> </li>
+                                                                <li> <a href="#"> Blog Single 2 </a> </li>
+                                                                <li> <a href="#"> Audio </a> </li>
+                                                                <li> <a href="#"> Video </a> </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="has-sub-menu">
+                                                        <span class="main-item">
+                                                            Pages
+                                                            <i class="fa-solid fa-angle-down"></i>
+                                                        </span>
+
+                                                        <div class="sub-menu">
+                                                            <ul>
+                                                                <li> <a href="#"> About </a> </li>
+                                                                <li> <a href="#"> FAQ </a> </li>
+                                                                <li> <a href="#"> Login </a> </li>
+                                                                <li> <a href="#"> Sign Up </a> </li>
+                                                                <li> <a href="#"> Forget Password </a> </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="has-sub-menu">
+                                                        <span class="main-item">
+                                                            Contact
+                                                            <i class="fa-solid fa-angle-down"></i>
+                                                        </span>
+
+                                                        <div class="sub-menu">
+                                                            <ul>
+                                                                <li> <a href="#"> Contact Style 1 </a> </li>
+                                                                <li> <a href="#"> Contact Style 2 </a> </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
 
                 </div>
             </div>
-
-
-
-
-
-
-
         </div>
 
         <div class="header-bottombar text-center w-100">
@@ -235,7 +667,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/card-img1-2.jpg" alt="Slider Item Model">
+                            <img src="./assets/images/card-img1-2_29_11zon.jpg" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -301,7 +733,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/7.png" alt="Slider Item Model">
+                            <img src="./assets/images/7_26_11zon.png" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -334,7 +766,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/9.png" alt="Slider Item Model">
+                            <img src="./assets/images/9_27_11zon.png" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -367,7 +799,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/7.png" alt="Slider Item Model">
+                            <img src="./assets/images/7_26_11zon.png" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -400,7 +832,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/keagan-henmanjpg.jpg" alt="Slider Item Model">
+                            <img src="./assets/images/keagan-henmanjpg_3_11zon.jpg" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -433,7 +865,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/post-img1-3.jpg" alt="Slider Item Model">
+                            <img src="./assets/images/post-img1-3_9_11zon.jpg" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -466,7 +898,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/9.png" alt="Slider Item Model">
+                            <img src="./assets/images/9_27_11zon.png" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -499,7 +931,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/product-img1-10.jpg" alt="Slider Item Model">
+                            <img src="./assets/images/product-img1-10_14_11zon.jpg" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -570,7 +1002,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/7.png" alt="Slider Item Model">
+                            <img src="./assets/images/7_26_11zon.png" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -603,7 +1035,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/card-img1-2.jpg" alt="Slider Item Model">
+                            <img src="./assets/images/card-img1-2_29_11zon.jpg" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -636,7 +1068,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/7.png" alt="Slider Item Model">
+                            <img src="./assets/images/7_26_11zon.png" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -669,7 +1101,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/post-img1-3.jpg" alt="Slider Item Model">
+                            <img src="./assets/images/post-img1-3_9_11zon.jpg" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -702,7 +1134,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/9.png" alt="Slider Item Model">
+                            <img src="./assets/images/9_27_11zon.png" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -735,7 +1167,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/keagan-henmanjpg.jpg" alt="Slider Item Model">
+                            <img src="./assets/images/keagan-henmanjpg_3_11zon.jpg" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -768,7 +1200,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/product-img1-10.jpg" alt="Slider Item Model">
+                            <img src="./assets/images/product-img1-10_14_11zon.jpg" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -801,7 +1233,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/9.png" alt="Slider Item Model">
+                            <img src="./assets/images/9_27_11zon.png" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -872,7 +1304,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/card-img1-2.jpg" alt="Slider Item Model">
+                            <img src="./assets/images/card-img1-2_29_11zon.jpg" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -905,7 +1337,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/7.png" alt="Slider Item Model">
+                            <img src="./assets/images/7_26_11zon.png" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -938,7 +1370,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/post-img1-3.jpg" alt="Slider Item Model">
+                            <img src="./assets/images/post-img1-3_9_11zon.jpg" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -971,7 +1403,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/9.png" alt="Slider Item Model">
+                            <img src="./assets/images/9_27_11zon.png" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -1004,7 +1436,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/product-img1-10.jpg" alt="Slider Item Model">
+                            <img src="./assets/images/product-img1-10_14_11zon.jpg" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -1037,7 +1469,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/9.png" alt="Slider Item Model">
+                            <img src="./assets/images/9_27_11zon.png" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -1070,7 +1502,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/7.png" alt="Slider Item Model">
+                            <img src="./assets/images/7_26_11zon.png" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -1103,7 +1535,7 @@
 
                     <div class="slider-item">
                         <div class="slider-item-top">
-                            <img src="./assets/images/keagan-henmanjpg.jpg" alt="Slider Item Model">
+                            <img src="./assets/images/keagan-henmanjpg_3_11zon.jpg" alt="Slider Item Model">
 
                             <div class="slider-item-meta">
                                 <span class="slider-item-offer">
@@ -1267,7 +1699,7 @@
                     <div class="col-lg-6 col-md-5 col-12">
                         <div class="footer-bottom-payment">
                             <span>Accept for</span>
-                            <img src="./assets/images/payment-opt-img.png" alt="Payment Methods">
+                            <img src="./assets/images/payment-opt-img_8_11zon.png" alt="Payment Methods">
                         </div>
                     </div>
 

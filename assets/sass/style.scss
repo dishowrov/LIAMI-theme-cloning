@@ -261,6 +261,11 @@ body {
                                 span.item-img {
                                     height: 100%;
                                     width: 100%;
+
+                                    img {
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
                                 }
 
                                 button.remove-item {
@@ -2274,7 +2279,7 @@ body {
 
     .newsletter-wrap {
         padding: 5.625rem 6.25rem 6.25rem;
-        background-image: url('../images/newsletter-mockup.png');
+        background-image: url('../images/newsletter-mockup_6_11zon.png');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right bottom;
@@ -2399,7 +2404,7 @@ body {
 // products page's Hero section
 .products-hero {
     position: relative;
-    background: url('../images/nimble-made.jpg') no-repeat;
+    background: url('../images/nimble-made_7_11zon.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 
