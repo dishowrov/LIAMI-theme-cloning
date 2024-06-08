@@ -1,4 +1,4 @@
-// Header mobile menu an cart sidebar
+// Header mobile menu and cart sidebar
 document.addEventListener('DOMContentLoaded', function () {
   let menuOpenButton = document.querySelector('.mobile-menu-open');
   let menuCloseButton = document.querySelector('.mobile-menu-close');
@@ -34,13 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
-
 // Home page's hero slider section
 $('.home-hero-slider').slick({
-  arrows: true,
-  dots: true,
+  arrows: false,
+  dots: false,
   initialSlide: 0,
   infinite: true,
   slidesToShow: 1,

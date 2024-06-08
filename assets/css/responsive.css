@@ -184,7 +184,7 @@
         left: 0;
         right: 0;
         padding: 9px 15px;
-        margin: 0px 15px;
+        /* margin: 0px 15px; */
         overflow: hidden;
         transform: translateY(-0%);
         display: flex;
