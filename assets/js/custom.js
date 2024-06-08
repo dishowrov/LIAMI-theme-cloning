@@ -51,27 +51,12 @@ $('.home-hero-slider').slick({
   pauseOnDotsHover: false,
   pauseOnFocus: false,
   pauseOnHover: false,
-  prevArrow:
-    "<button type='button' class='slick-arrow prev-arrow'> <i class='fa-solid fa-angle-left'></i> </button>",
-  nextArrow:
-    "<button type='button' class='slick-arrow next-arrow'> <i class='fa-solid fa-angle-right'></i> </button>",
+  // prevArrow:
+  //   "<button type='button' class='slick-arrow prev-arrow'> <i class='fa-solid fa-angle-left'></i> </button>",
+  // nextArrow:
+  //   "<button type='button' class='slick-arrow next-arrow'> <i class='fa-solid fa-angle-right'></i> </button>",
 });
 
-$(".home-hero-slider").on(
-  "afterChange",
-  function (event, slick, currentSlide) {
-    $(".slick-active .hero-item-info > *").removeClass("hidden");
-    $(".slick-active .hero-item-info > *").addClass("animated fadeInUp");
-  }
-);
-
-$(".home-hero-slider").on(
-  "beforeChange",
-  function (event, slick, currentSlide) {
-    $(".slick-active .hero-item-info > *").removeClass("animated fadeInUp");
-    $(".slick-active .hero-item-info > *").addClass("hidden");
-  }
-);
 
 
 // Home page's Reviews slider
@@ -130,6 +115,20 @@ $('.new-arrivals-slider').slick({
       },
     },
   ],
+});
+
+// Home page's products slider section
+$('.home-products-slider').slick({
+  dots: false,
+  arrows: true,
+  infinite: true,
+  speed: 999,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow:
+  "<button type='button' class='slick-arrow prev-arrow'> <i class='fa-solid fa-angle-left'></i> </button>",
+nextArrow:
+  "<button type='button' class='slick-arrow next-arrow'> <i class='fa-solid fa-angle-right'></i> </button>",
 });
 
 
