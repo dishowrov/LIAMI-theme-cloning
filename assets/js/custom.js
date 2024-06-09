@@ -122,13 +122,24 @@ $('.home-products-slider').slick({
   dots: false,
   arrows: true,
   infinite: true,
-  speed: 999,
+  fade: true,
+  speed: 777,
   slidesToShow: 1,
   slidesToScroll: 1,
   prevArrow:
   "<button type='button' class='slick-arrow prev-arrow'> <i class='fa-solid fa-angle-left'></i> </button>",
 nextArrow:
   "<button type='button' class='slick-arrow next-arrow'> <i class='fa-solid fa-angle-right'></i> </button>",
+});
+
+// Home page's Blog left slider section
+$('.blog-left-part').slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  speed: 955,
+  slidesToShow: 1,
+  slidesToScroll: 1
 });
 
 
